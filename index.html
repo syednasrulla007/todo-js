@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+      <!-- Start of main-section -->
+
+      <div id="main-section">
+        <div id="app_header">
+          <button id="backBtn">Back</button>
+          <span id="tasks_text">Tasks</span>
+          <span id="list_text">List</span>
+          <div id="cardName">Card name</div>
+          <span id="no_list_text">No items in the todo list</span>
+          <span>
+            <button id="add_item_btn">+</button>
+          </span>
+          <span id="add_itm">Add Item</span>
+        </div>
+  
+        <!-- Start of tasks container -->
+        <div id="tasks_container"></div>
+        <!-- End of tasks container -->
+      </div>
+  
+      <!-- End of main-section -->
+  
+      <!-- Start of Add Item popup -->
+      <div id="todo_popup" class="popup">
+        <span class="new_itemsText">Add New List</span>
+        <br />
+        <hr />
+        <br />
+        <input type="text" placeholder="Add new list" id="toDoNameInput" class="popup_input" />
+        <br />
+        <br />
+        <button id="Add_todo_item_btn" class="popup_btn_add">Add</button>
+        <button id="Cancel_todo_item_btn" class="popup_btn_delete">Cancel</button>
+      </div>
+      <!-- End of Add Item popup -->
+  
+      <div id="listItem_popup" class="popup">
+        <span class="new_itemsText">Add New Item</span>
+        <br />
+        <hr />
+        <br />
+        <input type="text" placeholder="Add new item" id="listItemInput" class="popup_input" />
+        <br />
+        <br />
+        <button id="Add_list_item_btn" class="popup_btn_add">Add</button>
+        <button id="Cancel_list_item_btn" class="popup_btn_delete">Cancel</button>
+      </div>
+  
+      <script src="index.js"></script>
+</body>
+</html>
